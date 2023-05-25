@@ -1,0 +1,62 @@
+.userSignupPage {
+  .formContainer {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // border: 2px solid red;
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      .input {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid grey;
+        background-color: inherit;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: left;
+        padding: 2px 6px;
+        color: white;
+        transition: all 0.3s ease;
+        &:focus {
+          border-bottom: 2px solid white;
+        }
+      }
+
+      .submitBtn {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(36, 174, 33);
+        pointer-events: auto;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: rgb(36, 174, 33, 0.8);
+        }
+        &:active {
+          padding: 0.79;
+          font-size: 1.1rem;
+        }
+      }
+      
+      .submitBtnDisabled {
+        background-color: rgb(36, 174, 33, 0.8);
+        cursor: not-allowed;
+
+        &:active{
+            padding: 0.8rem;
+            font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

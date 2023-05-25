@@ -1,0 +1,14 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+
+
+  .title{
+   height: 20vh;
+  }
+}
+
