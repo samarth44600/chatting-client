@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## DPLOYED ON Vercel
+Link:  https://chat-app-samarth44600.vercel.app/
 
 ## Getting Started
 
