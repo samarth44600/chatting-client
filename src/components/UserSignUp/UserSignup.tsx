@@ -18,11 +18,11 @@ const UserSignup = (props: Props) => {
     socket.on("connect", () => {
       console.log("Socket connected", socket.id);
       socket.emit("set-userName", { userName: userName });
+      dispatch(setUser({ userName: userName, userId: socket.id }));
+      console.log("Socket id:", socket.id);
+      router.push("/chat");
+      setusername("");
     });
-    dispatch(setUser({ userName: userName, userId: socket.id }));
-    console.log("Socket id:", socket.id);
-    router.push("/chat");
-    setusername("");
   };
 
   useEffect(() => {
